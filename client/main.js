@@ -1,6 +1,6 @@
 
 
-const baseURL = `http://localhost:3000/api/inspo`
+const baseURL = `${window.location.origin}/api/inspo`
 
 
 const message = document.querySelector("#message")

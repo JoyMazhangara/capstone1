@@ -81,17 +81,19 @@ button {
 main {
   display: flex;
   flex-direction: row;
-  border: 1px solid black;
+  
 }
 
 #main-left {
-  border: 1px solid black;
+  
   width: 31%;
 }
 
-#inspos-container {
+/* #inspos-container {
   border: 1px solid black;
-  
+} */
+#board-title {
+  font-family: 'lucida handwriting';
 }
 
 #story-board {
@@ -99,7 +101,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid orange;
+  
 }
 
   

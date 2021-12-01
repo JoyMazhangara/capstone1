@@ -1,0 +1,161 @@
+header {
+    height: 80px;
+    display: flex;
+    background-color: aquamarine;
+}
+
+header > div {
+  margin-top: 30px;
+  margin-left: 900px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+article {
+    margin-top: 20px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+}
+
+ul {
+    font-size: 24px;
+    width: 100%;
+}
+
+li {
+    cursor: pointer;
+    
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-weight: bold;
+    background: teal;
+    color: white;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+
+/* INSPO CARDS CSS */
+
+
+main > form {
+  width: 350px;
+  height: 350px;
+  background-color: darkslategray;
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-evenly; 
+  align-items: center;
+  margin: 30px;
+}
+
+  /* button {
+    background-color: #c59a4a;
+    width: 75px;
+    height: 25px;
+    color: snow;
+    border: none;
+    margin: 5px;
+  }  */
+
+  /* div > button {
+    background-color: #c59a4a;
+    width: 150px;
+    height: 25px;
+    color: snow;
+    border: none;
+    margin: 5px;
+  } */
+  
+  input[type='text'] {
+    width: 85%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #232323;
+    color: #232323;
+    background-color: snow;
+  }
+
+  input[id='text'] {
+    width: 85%;
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid #232323;
+    color: #232323;
+    background-color: snow;
+  }
+  
+  #text-container {
+    width: 85%;
+  }
+  
+  #radio-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #inspos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inspo-cover-image {
+    width: 300px; 
+    height: 300px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .inspo-card {
+    background-color: #c59a4a;
+    width: 300px;
+    margin: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .inspo-title {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
+  .inspo-text {
+    font-size: 15px;
+    margin: 5px 0;
+  }
+  
+  .txt-container {
+    width: 100%; 
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5px;
+  }
+  

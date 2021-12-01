@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "title": "My Strength",
+      "text": "I have overcome awesome things",
+      "imageURL" : "http://cminsure.com/wp-content/uploads/ContentImage-GradeAPlus.jpg-550x0-300x225.jpg"
+    },
+    {
+      "id": 2,
+      "title": "My Friend",
+      "text": "When I was seven I stood up for a friend on mine against her bullies",
+      "imageURL" : "https://cdn.cnn.com/cnnnext/dam/assets/170606121035-greece---travel-destination---shutterstock-560829934.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Me vs Me",
+      "text": "I finally feel confident in my own skin",
+      "imageURL" : "https://www.24hourfitness.com/content/dam/24-hour-fitness/home/featured-programs/Studio-Classes.jpg"
+    }
+]

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspire You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Inspire You</h1>
+        <div>
+        <button id="complimentButton">Get a Compliment!</button>
+        </div>
+    </header>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        document.getElementById("complimentButton").onclick = function () {
+            axios.get("http://localhost:3000/api/compliment/")
+            .then(function (response) {
+                const data = response.data;
+                alert(data);
+            })
+        };
+    </script>
+    <article>
+        <h1>Inspiring Quotes</h1>
+        <section>
+            <form id="quotes">
+                <input placeholder="Add Quote" />
+                <button>Add</button>
+            </form>
+        </section>
+        <ul></ul>
+        <aside id="message"></aside>
+    </article>
+
+
+
+    <main>
+    <form>
+        <input 
+           type='text'
+           id="title"
+           placeholder="Title this story"/>
+        <input 
+           type='text'
+           id="text"
+           placeholder='write a short story'/>
+        <input 
+           type='text'
+           id="img"
+           placeholder='Paste an image URL'/>
+        <button>add inspiration</button>
+     </form>
+ 
+     <section id="inspos-container"></section>
+ 
+     </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>

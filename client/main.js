@@ -33,8 +33,8 @@ function deleteQuote(event) {
 
 // INSPIRATIONAL CARDS CODE
 
-const inspoContainer = document.querySelector('#inpos-container')
-const form = document.querySelector('form')
+const inspoContainer = document.querySelector('#inspos-container')
+const form = document.querySelector('#inspo-form')
 
 
 
@@ -43,9 +43,9 @@ function createInspoCard(inspo) {
     inspoCard.classList.add('inspo-card')
 
     inspoCard.innerHTML = `<img alt='inspo cover image' src=${inspo.imageURL} class="inspo-cover-image"/>
-    <p class="title">${inspo.title}</p>
+    <p class="inspo-title">${inspo.title}</p>
     <div class="txt-container">
-        <p class="inspo-text">${inspo.text} days</p>  
+        <p class="inspo-text">${inspo.text}</p>  
     </div>
     <button onclick="deleteInspo(${inspo.id})">delete</button>
     `
@@ -63,11 +63,9 @@ function displayInspos(arr) {
     }
 }
 
-const inspoCallback = (res) => {
-    {inspos = res.data}
-    console.log(res)
-    displayInspos(inspos)
-}
+const inspoCallback = ({data: inspos}) => displayInspos(inspos)
+
+
 const errCallback = err => console.log(err)
 
 const getAllInspos = () => axios.get(baseURL).then(inspoCallback).catch(errCallback)
@@ -87,7 +85,7 @@ function submitHandler(e) {
         text: text.value, 
         imageURL: imageURL.value
     }
-
+    console.log("in handler", bodyObj)
     axios.post(baseURL, bodyObj)
     .then(res => {
         let insposArr = res.data
@@ -101,21 +99,6 @@ function submitHandler(e) {
     imageURL.value = ''
 }
 
-// function createInspoCard(inspo) {
-//     const inspoCard = document.createElement('div')
-//     inspoCard.classList.add('inspo-card')
-
-//     inspoCard.innerHTML = `<img alt='inspo cover image' src=${inspo.imageURL} class="inspo-cover-image"/>
-//     <p class="title">${inspo.title}</p>
-//     <div class="txt-container">
-//         <p class="inspo-text">${inspo.text} days</p>  
-//     </div>
-//     <button onclick="deleteInspo(${inspo.id})">delete</button>
-//     `
-
-
-//     inspoContainer.appendChild(inspoCard)
-// }
 
 
 form.addEventListener('submit', submitHandler)

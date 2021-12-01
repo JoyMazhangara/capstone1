@@ -1,20 +1,23 @@
 [
-    {
-      "id": 1,
-      "title": "My Strength",
-      "text": "I have overcome awesome things",
-      "imageURL" : "http://cminsure.com/wp-content/uploads/ContentImage-GradeAPlus.jpg-550x0-300x225.jpg"
-    },
-    {
-      "id": 2,
-      "title": "My Friend",
-      "text": "When I was seven I stood up for a friend on mine against her bullies",
-      "imageURL" : "https://cdn.cnn.com/cnnnext/dam/assets/170606121035-greece---travel-destination---shutterstock-560829934.jpg"
-    },
-    {
+  {
+    "id": 1,
+    "title": "Me vs Me",
+    "text": "I finally feel confident in my own skin and in who I am becoming. Growing up that wasn't always the case so I'm thankful for the people that have enouraged me along the way.",
+    "imageURL" : "https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/244053278_4516473108417568_7519934803833106702_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=SA2JryyGLH4AX9Fyclj&_nc_ht=scontent-ort2-1.xx&oh=d6ee6dbe4cd9849dd12d9e0be916180c&oe=61ACECE7"
+  }, 
+  
+  {
+    "id": 2,
+    "title": "My Hope",
+    "text": "Why choose joy in the midst of all the trials, pains, and struggles in this world? That is because one day there will be no more. We GET to be a light, reminding and enouraging everybody to endure. Struggles are short-lived but joy will be forever.",
+    "imageURL" : "https://lh3.googleusercontent.com/XaM5mjm3fyZr7rU20Mf1oA0zV1l0Ljw6rpnkgiK3geSfJRLAT5OP8QlBovXJp6NrtwnZ4DeZ77t-TkjzC6fkHAT-bCEn9ANfg3cGQzqQ7qUO7NklXj-IK5gAGmhij1en3wWz5D9g0Z0E3_x800JOQW84WoalUVSjEZQ7GTTG8Sdlmg8ScQvOw-xA1hFKRnGW3tUxmGDiDFTa3LtaDoN6itut8Z72QgE9JsYCQ8r0IhhrMLPPUD3Our-RShNETQPJpXKZ2aj5LB_npU9dd_fFIoOZtV0EEAajFa9B968mXc7PNl-i1EycdgCNeqPWqioM9swXAyhx8fVhfPuXkkicaMy5V4cWv8YekddxIYyk4rSTsBILJMJA0TO_ZUXA5FQIRiDTVNKpfXWQu5dSS69YIPnK8Wf5BL7br_vyMPrPTA1pyxE8piD8DAhOXPj2wooHH0VRT0IqAAH45cW7KUSp65cvTk006JOvAnrZTn6MHP-jbS0fFqiaMdQ8j1ifmzVOeFH8WJjS2eSVmZSdO9uVP6vlCu5WTC5BPMxUB8sYaiEvqUQMJw7CCPHhnQqL2wjJaUidxlmlupMsE11NXty02_Z_NVtKU6tYpWOHuz9gTfGLFlF2MTXLFfJVYHwzaJhPsD_CbyJYVWL1HWFR0wbKk3Cja-Bv462YEzuzBLiWJwjm0iNOo_NFM1QaepaX8DMhre55h9C658GWDoOMEFK-3A=w293-h220-no?authuser=0"
+  },
+  {
       "id": 3,
-      "title": "Me vs Me",
-      "text": "I finally feel confident in my own skin",
-      "imageURL" : "https://www.24hourfitness.com/content/dam/24-hour-fitness/home/featured-programs/Studio-Classes.jpg"
+      "title": "My Strength",
+      "text": "I found my strength by letting go of my weaknesses. Instead being ruled by insecurities I choose to focus on my strengths and bring out the strengths of those around me.",
+      "imageURL" : "https://scontent-ort2-1.xx.fbcdn.net/v/t39.30808-6/213354566_4055859734467893_8585627434821357884_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=oIbyskViNoYAX_RaDuW&_nc_ht=scontent-ort2-1.xx&oh=4cf45fbf1fae9d0759f117ff6b445ce9&oe=61AC2895"
     }
+    
+    
 ]

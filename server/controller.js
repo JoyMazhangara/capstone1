@@ -4,6 +4,7 @@ let globalId = 4;
 module.exports = {
  
     getInspos: (req,res) => {
+        
         res.status(200).send(inspos);
     },
  

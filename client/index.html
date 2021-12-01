@@ -25,6 +25,8 @@
             })
         };
     </script>
+<main>
+<div id="main-left">
     <article>
         <h1>Inspiring Quotes</h1>
         <section>
@@ -37,27 +39,35 @@
         <aside id="message"></aside>
     </article>
 
+    <!-- INSPIRATIONAL CARDS HTML -->
 
-
-    <main>
-    <form>
+    
+    <form id="inspo-form">
         <input 
            type='text'
            id="title"
            placeholder="Title this story"/>
-        <input 
-           type='text'
+        <textarea 
+           rows = "3"
            id="text"
-           placeholder='write a short story'/>
+           placeholder='write a short story'>
+        </textarea>
         <input 
            type='text'
            id="img"
            placeholder='Paste an image URL'/>
         <button>add inspiration</button>
      </form>
- 
+</div>
+
+      <div id="story-board"> 
+        <h1>Story Board</h1>
+        <p>A collection of people a stories to motivate
+           and encourage you on your journey to the best 
+           version of yourself!
+        </p>
      <section id="inspos-container"></section>
- 
+      </div>
      </main>
 
     <script src="./main.js"></script>

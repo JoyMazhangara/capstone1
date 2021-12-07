@@ -1,6 +1,6 @@
 
 
-const baseURL = `${window.location.origin}/api/inspo`
+const baseURL = `http://localhost:3000`
 
 
 const message = document.querySelector("#message")
@@ -68,9 +68,9 @@ const inspoCallback = ({data: inspos}) => displayInspos(inspos)
 
 const errCallback = err => console.log(err)
 
-const getAllInspos = () => axios.get(baseURL).then(inspoCallback).catch(errCallback)
-const createInspo = body => axios.post(baseURL, body).then(inspoCallback).catch(errCallback)
-const deleteInspo = id => axios.delete(`${baseURL}/${id}`).then(inspoCallback).catch(errCallback)
+const getAllInspos = () => axios.get(`${baseURL}/api/inspo`).then(inspoCallback).catch(errCallback)
+const createInspo = body => axios.post(`${baseURL}/api/inspo`, body).then(inspoCallback).catch(errCallback)
+const deleteInspo = id => axios.delete(`${baseURL}/api/inspo/${id}`).then(inspoCallback).catch(errCallback)
 
 
 function submitHandler(e) {

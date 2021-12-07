@@ -1,6 +1,6 @@
 
 
-const baseURL = `http://localhost:3000`
+const baseURL = `${window.location.origin}`
 
 
 const message = document.querySelector("#message")

@@ -9,65 +9,67 @@
 </head>
 <body>
     
-    <header>
-        <h1>Inspire You</h1>
-        <div>
-        <button id="complimentButton">Get a Compliment!</button>
-        </div>
-    </header>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-        document.getElementById("complimentButton").onclick = function () {
-            axios.get(`${window.location.origin}/api/compliment/`)
-            .then(function (response) {
-                const data = response.data;
-                alert(data);
-            })
-        };
-    </script>
-<main>
-<div id="main-left">
-    <article>
-        <h1>Inspiring Quotes</h1>
-        <section>
-            <form id="quotes">
-                <input placeholder="Add Quote" />
-                <button>Add</button>
-            </form>
-        </section>
-        <ul></ul>
-        <aside id="message"></aside>
-    </article>
+        <header>
+            <h1>Inspire You</h1>
+            <div>
+                 <button id="complimentButton">Get a Compliment!</button>
+            </div>
+        </header>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script>
+            document.getElementById("complimentButton").onclick = function () {
+                axios.get(`${window.location.origin}/api/compliment/`)
+                .then(function (response) {
+                    const data = response.data;
+                    alert(data);
+                })
+             };
+            </script>
+    <main>
+
+    <!-- INSPIRING QUOTES HTML -->
+
+        <div id="main-left">
+            <article>
+            <h1>Inspiring Quotes</h1>
+            <section>
+                <form id="quotes">
+                 <input placeholder="Add Quote" />
+                    <button>Add</button>
+                </form>
+            </section>
+            <ul></ul>
+            <aside id="message"></aside>
+            </article>
 
     <!-- INSPIRATIONAL CARDS HTML -->
-
     
-    <form id="inspo-form">
-        <input 
-           type='text'
-           id="title"
-           placeholder="Title your story"/>
-        <textarea 
-           rows = "3"
-           id="text"
-           placeholder='write a short story'>
-        </textarea>
-        <input 
-           type='text'
-           id="img"
-           placeholder='Paste an image URL'/>
-        <button>add inspiration</button>
-     </form>
-</div>
+            <form id="inspo-form">
+                <input 
+                type='text'
+                id="title"
+                placeholder="Title your story"/>
+                <textarea 
+                rows = "3"
+                id="text"
+                placeholder='write a short story'>
+                </textarea>
+                <input 
+                type='text'
+                id="img"
+                placeholder='Paste an image URL'/>
+                <button>add inspiration</button>
+            </form>
+        </div>
 
-      <div id="story-board"> 
-        <h1 id="board-title">Story Board</h1>
-        <p>A collection of people and stories to motivate
-           and encourage you on your journey to the best 
-           version of yourself!
-        </p>
-     <section id="inspos-container"></section>
-      </div>
+        <div id="story-board"> 
+            <h1 id="board-title">Story Board</h1>
+                <p>A collection of people and stories to motivate
+                and encourage you on your journey to the best 
+                version of yourself!
+                </p>
+            <section id="inspos-container"></section>
+        </div>
      </main>
 
     <script src="./main.js"></script>

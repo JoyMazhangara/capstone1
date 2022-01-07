@@ -29,6 +29,7 @@ form2.addEventListener('submit', addQuote)
 function deleteQuote(event) {
     event.target.parentNode.remove();
     message.textContent = "Quote deleted!"
+    message.textContent = " "
 }
 
 // INSPIRATIONAL CARDS CODE

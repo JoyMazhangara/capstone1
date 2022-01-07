@@ -87,19 +87,13 @@ function submitHandler(e) {
         imageURL: imageURL.value
     }
     console.log("in handler", bodyObj)
-    axios.post(baseURL, bodyObj)
-    .then(res => {
-        let insposArr = res.data
-        displayInspos(insposArr)
-    })
-
+    createInspo(bodyObj)
     
 
     title.value = ''
     text.value = ''
     imageURL.value = ''
 }
-
 
 
 form.addEventListener('submit', submitHandler)
